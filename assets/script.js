@@ -1,28 +1,27 @@
-const shapes = ["square", "rectangle", "circle", "triangle"];
-for (let x = 0; x < shapes.length; x++) {
-// code block to be executed
-console.log(shapes[x]);
+const topics = ["HTML", "CSS", "Git", "JavaScript"];
+const randomTopic = topics[Math.floor(Math.random() * topics.length)];
 
-// const topic = "HTML";
-
-// if (topic === "HTML") {
-//   console.log("Let's study HTML!");
-// } else if (topic === "CSS") {
-//   console.log("Let's study CSS!");
-// } else if (topic === "Git") {
-//   console.log("Let's study Git!");
-// } else if (topic === "JavaScript") {
-//   console.log("Let's study JavaScript!");
-// } else {
-//   console.log("Please try again!");
-// }
-
-// const shapes = ["square", "rectangle", "circle", "triangle"];
-
-// console.log(shapes[0]); // square
-// console.log(shapes[1]); // rectangle
-// console.log(shapes[2]); // circle
-// console.log(shapes[3]); // triangle
-
+function listTopics() {
+  for (let x = 0; x < topics.length; x++) {
+    console.log(topics[x]);
+  }
 }
 
+function selectTopic() {
+  if (randomTopic === "HTML") {
+    console.log("Let's study HTML!");
+  } else if (randomTopic === "CSS") {
+    console.log("Let's study CSS!");
+  } else if (randomTopic === "Git") {
+    console.log("Let's study Git!");
+  } else if (randomTopic === "JavaScript") {
+    console.log("Let's study JavaScript!");
+  } else {
+    console.log("Please try again!");
+  }
+}
+
+console.log("Here are the topics we learned through Prework:");
+listTopics();
+console.log("Which topic should we study first?");
+selectTopic();
